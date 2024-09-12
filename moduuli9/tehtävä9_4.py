@@ -55,7 +55,7 @@ def kilpailu():
         print(f"Huippunopeus:{autot[i].huippunopeus}")
         print(f"Nopeus lopussa:{autot[i].tamanhetkinennopeus}")
         print(f"Kuljettumatka:{autot[i].kuljettumatka}")
-        print("------------------------")
+        print("---------------------")
     for i in range(len(autot)):
         if autot[i].kuljettumatka > 10000:
             print(f"Auto {autot[i].rekisteritunnus} voitti")
