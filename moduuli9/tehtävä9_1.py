@@ -7,7 +7,7 @@ class Auto:
 
 #Pääohjelma
 def main():
-    auto1 = Auto("ABC-123", 142, 0, 0)
-    print(f"Auton rekisteritunnus:{auto1.rekisteritunnus} \nAuton huippunopeus:{auto1.huippunopeus}km/h")
+    auto = Auto("ABC-123", 142, 0, 0)
+    print(f"Auton rekisteritunnus:{auto.rekisteritunnus} \nAuton huippunopeus:{auto.huippunopeus}km/h")
     return
 main()
