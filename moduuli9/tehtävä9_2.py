@@ -14,13 +14,13 @@ class Auto:
 
 #Pääohjelma
 def main():
-    auto1 = Auto("ABC-123", 142, 0, 0)
-    print(f"Auton rekisteritunnus:{auto1.rekisteritunnus} \nAuton huippunopeus:{auto1.huippunopeus}km/h")
-    auto1.kiihdyta(30)
-    auto1.kiihdyta(70)
-    auto1.kiihdyta(50)
-    print(f"Auton nopeus:{auto1.tamanhetkinennopeus}")
-    auto1.kiihdyta(-200)
-    print(f"Auton nopeus:{auto1.tamanhetkinennopeus}")
+    auto = Auto("ABC-123", 142, 0, 0)
+    print(f"Auton rekisteritunnus:{auto.rekisteritunnus} \nAuton huippunopeus:{auto.huippunopeus}km/h")
+    auto.kiihdyta(30)
+    auto.kiihdyta(70)
+    auto.kiihdyta(50)
+    print(f"Auton nopeus:{auto.tamanhetkinennopeus}")
+    auto.kiihdyta(-200)
+    print(f"Auton nopeus:{auto.tamanhetkinennopeus}")
     return
 main()
