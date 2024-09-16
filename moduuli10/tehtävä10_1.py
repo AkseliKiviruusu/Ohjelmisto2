@@ -10,11 +10,11 @@ class Hissi:
     def ylos(self):
         self.kerros += 1
 
-    def siirry(self, kerrokseen):
-        if self.alin <= kerrokseen <= self.ylin:
-            while kerrokseen < self.kerros:
+    def siirry(self, uusi_kerros):
+        if self.alin <= uusi_kerros <= self.ylin:
+            while uusi_kerros < self.kerros:
                 self.alas()
-            while kerrokseen > self.kerros:
+            while uusi_kerros > self.kerros:
                 self.ylos()
             print(f"Hissi on nyt kerroksessa:\n{hissi.kerros}")
         else:
