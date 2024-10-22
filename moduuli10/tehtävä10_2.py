@@ -37,7 +37,7 @@ class Talo:
         if 0 <= hissi_index < len(self.hissit):
             self.hissit[hissi_index].siirry(kerros)
 
-#Pääohjelma
+#pääohjelma
 
 def main():
     talo = Talo(0, 20, 3)
