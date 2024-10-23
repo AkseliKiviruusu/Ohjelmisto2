@@ -1,9 +1,10 @@
 import requests
+import api_key
 degree = u'\N{DEGREE SIGN}'
 
 def main():
     pk = input('Anna paikkakunnan nimi: ')
-    request = f'https://api.openweathermap.org/data/2.5/weather?q={pk}&appid=' + '374da4854d5e0f72291fa273f646088b'
+    request = f'https://api.openweathermap.org/data/2.5/weather?q={pk}&appid=' + f'{api_key.api_key}'
 
     try:
         response = requests.get(request)
