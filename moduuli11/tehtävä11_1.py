@@ -25,5 +25,11 @@ class Kirja(Julkaisu):
         print(self.kirjoittaja)
         print(self.sivumaara)
 
-julkaisu = Kirja('Harry Potter', 'J.K. Rowling', 459)
-julkaisu.tulosta_tiedot()
+def main():
+    julkaisu = Kirja('Harry Potter', 'J.K. Rowling', 459)
+    julkaisu2 = Lehti('Suomen Kuvalehti','Matti Kalliokoski')
+    julkaisu.tulosta_tiedot()
+    print()
+    julkaisu2.tulosta_tiedot()
+    return
+main()
