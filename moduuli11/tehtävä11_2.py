@@ -28,15 +28,11 @@ class Poltto(Auto):
 
 # Pääohjelma:
 def main():
-
     sahkoauto = Sahko('ABC-15', 180, 80, 0, 52.5)
     poltto = Poltto('ACD-123', 165, 100, 0, 32.3)
-
     sahkoauto.kulje(3)
     poltto.kulje(3)
-
     print(f'kuljettumatka: {sahkoauto.kuljettumatka}')
     print(f'kuljettumatka: {poltto.kuljettumatka}')
     return
-
 main()
